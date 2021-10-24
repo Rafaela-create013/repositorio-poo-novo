@@ -15,6 +15,13 @@ public class Data {
     public int ano;
     
     public String getData(){
-     return dia + "/" + mes + "/" + ano;
+        String data = "";
+        if(dia<10) data += "0";
+        data += dia+ "/";
+        if(mes<10) data += "0";
+        data += mes+ "/";
+        if(ano<10) data += "0";
+        data += ano;
+     return data;
     }
 }

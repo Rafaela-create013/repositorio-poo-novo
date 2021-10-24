@@ -15,7 +15,7 @@
     
     Data rafaAniversario = new Data();
     
-    rafaAniversario.dia = 26;
+    rafaAniversario.dia = 2;
     rafaAniversario.mes = 8;
     rafaAniversario.ano = 2021;
 
@@ -31,6 +31,6 @@
         <h3>Data de hoje</h3>
         <h3><%= hoje.dia %>/<%= hoje.mes %>/<%= hoje.ano %></h3>
         <h3>Meu aniversario</h3>
-        <h3><%= rafaAniversario.dia %>/<%= rafaAniversario.mes %>/<%= rafaAniversario.ano %></h3>
+        <h3><%= rafaAniversario.getData() %></h3>
     </body>
 </html>
