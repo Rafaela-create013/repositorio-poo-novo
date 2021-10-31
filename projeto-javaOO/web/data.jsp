@@ -7,17 +7,11 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
+    Data padrao = new Data();
+    
     Data hoje = new Data();
     
-    hoje.dia = 24;
-    hoje.mes = 10;
-    hoje.ano = 2021;
-    
-    Data rafaAniversario = new Data();
-    
-    rafaAniversario.dia = 2;
-    rafaAniversario.mes = 8;
-    rafaAniversario.ano = 2021;
+    Data rafaAniversario = new Data(1, -13, 2021);
 
 %>
 <html>
@@ -28,9 +22,11 @@
     <body>
         <%@include file="WEB-INF/jspf/header.jspf" %>
         <h2>CLASSE DATA</h2>
+        <h3>Data padrao</h3>
+        <h3><%= padrao.dia %>/<%= padrao.getMes() %>/<%= padrao.ano %></h3>
         <h3>Data de hoje</h3>
-        <h3><%= hoje.dia %>/<%= hoje.mes %>/<%= hoje.ano %></h3>
-        <h3>Meu aniversario</h3>
+        <h3><%= hoje.getData() %></h3>
+        <h3>Data aniversario</h3>
         <h3><%= rafaAniversario.getData() %></h3>
     </body>
 </html>
