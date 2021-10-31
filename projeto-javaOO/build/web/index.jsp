@@ -32,8 +32,8 @@
                 <th>Horario do intervalo</th>
             </tr>
             <tr>
-                <td><%= atual.getHora() %>:<%= atual.getMinuto() %>:<%= atual.getSegundos() %></td>
-                <td><%= intervalo.getHora() %>:<%= intervalo.getMinuto() %>:<%= intervalo.getSegundos() %></td>
+                <td><%= atual.getHora() %>:<%= atual.getMinuto() %>:<%= atual.getSegundos() %>0</td>
+                <td><%= intervalo.getHora() %>:<%= intervalo.getMinuto() %>:<%= intervalo.getSegundos() %>0</td>
             </tr>
         </table>
     </body>
