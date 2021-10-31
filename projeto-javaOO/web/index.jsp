@@ -10,12 +10,15 @@
     <%@page import="model.Horario" %>
 <!DOCTYPE html>
 <% 
+    Horario atual = new Horario();
+    atual.setHora(22);
+    atual.setMinuto(40);
+    atual.setSegundos(70);
+    
     Horario intervalo = new Horario();
     intervalo.setHora(14);
     intervalo.setMinuto(30);
     intervalo.setSegundos(90);
-    
-    Horario atual = new Horario(22, 56, 50);
 
 %>
 <html>
@@ -35,7 +38,7 @@
             
             <tr>
                 <td><%= atual.getHorario() %></td>
-                <td><%= intervalo.getHora() %>:<%= intervalo.getMinuto() %>:<%= intervalo.getSegundos() %></td>
+                <td><%= intervalo.getHorario() %></td>
             </tr>
         </table>
     </body>
