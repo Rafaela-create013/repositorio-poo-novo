@@ -42,11 +42,6 @@ public class Horario {
         return segundos;
     }
     
-    public Horario(int hora, int minuto, int segundos){
-        this.setHora(hora);
-        this.setMinuto(minuto);
-        this.setSegundos(segundos);
-    }
     /**
      * Construtor para inicializar esse horario padrão
      */
@@ -56,5 +51,21 @@ public class Horario {
     minuto = 00;
     segundos = 00;
     }
+        public Horario(int hora, int minuto, int segundos){
+        this.setHora(hora);
+        this.setMinuto(minuto);
+        this.segundos = segundos;
+    }
     
+        public String getHorario(){
+        String horario  = "";
+        if(hora>59) horario += "00";
+        horario += hora+":";
+        if(minuto>59) horario += "00";
+        horario += minuto+":";
+        if(segundos>59) horario += "00";
+        horario += segundos;
+        return horario;
+    }
+   
 }

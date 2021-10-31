@@ -6,9 +6,14 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%@page import="model.Aniversario" %>
+<%
+  Aniversario meu = new Aniversario();  
+%>
 <html>
       <%@include file="WEB-INF/jspf/header.jspf" %>
     <body>
-        <h1>Hello World!</h1>
+        <h3>Meu aniversário é:</h3>
+        <h3><%= meu.getAniversario() %></h3>
     </body>
 </html>

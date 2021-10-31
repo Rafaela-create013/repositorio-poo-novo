@@ -15,7 +15,7 @@
     intervalo.setMinuto(30);
     intervalo.setSegundos(90);
     
-    Horario atual = new Horario(22, 56, 90);
+    Horario atual = new Horario(22, 56, 50);
 
 %>
 <html>
@@ -26,14 +26,16 @@
     <body>
         <%@include file="WEB-INF/jspf/header.jspf" %>
         <h2>Veja os horários abaixo</h2>
-        <table>
+        <table >
             <tr>
-                <th>Horario atual</th>
-                <th>Horario do intervalo</th>
+                <th>Horario atual </th>
+                <th>Horario do intervalo </th>
+                <hr>
             </tr>
+            
             <tr>
-                <td><%= atual.getHora() %>:<%= atual.getMinuto() %>:<%= atual.getSegundos() %>0</td>
-                <td><%= intervalo.getHora() %>:<%= intervalo.getMinuto() %>:<%= intervalo.getSegundos() %>0</td>
+                <td><%= atual.getHorario() %></td>
+                <td><%= intervalo.getHora() %>:<%= intervalo.getMinuto() %>:<%= intervalo.getSegundos() %></td>
             </tr>
         </table>
     </body>

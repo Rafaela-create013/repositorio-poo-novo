@@ -10,13 +10,28 @@ package model;
  * @author Rafaela
  */
 public class Aniversario{
-    public String aniversario;
+    public int dia;
+    public int mes;
+    public int ano;
     
     /**
-     * Construtor para inicializar esse horario padrão
+     * Construtor para inicializar com o meu aniversario
      */
     
     public Aniversario(){
-   aniversario = "26/08/2021";
+        dia = 26;
+        mes = 8;
+        ano = 2021;
     }
+    
+    public String getAniversario(){
+        String data  = "";
+        if(dia<10) data += "0";
+        data += dia+"/";
+        if(mes<10) data += "0";
+        data += mes+"/";
+        data += ano;
+        return data;
+    }
+    
 }
