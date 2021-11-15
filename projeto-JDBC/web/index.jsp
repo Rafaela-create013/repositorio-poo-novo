@@ -32,8 +32,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <h3> JDBC - Rafaela Brandão Mania Lima</h3>
-        <h4> 26/08/2001 - RA:1290482012031</h4>
+        <h3> ..:: JDBC - Rafaela Brandão Mania Lima ::..</h3>
+        <h4> ..:: 26/08/2001 - RA:1290482012031 ::..</h4>
     </head>
     <body class="p-3 mb-2 bg-secondary text-white">
         <hr>
@@ -51,8 +51,10 @@
         <%}%>
         <h3> ..:: Tarefas ::..</h3>
         <form>
-            <input type="name" name="taskName">
-            <input type="submit" name="add" value="adicionar">
+           <div class="input-group mb-3">
+            <input class="form-control" type="name" name="taskName">
+            <input class="btn btn-outline-dark"  type="submit" name="add" value="adicionar">
+           </div>
         </form>
         <br>
         <div >
@@ -67,8 +69,8 @@
                 <td class="table-dark"><%= taskName %></td>
                 <td >
                     <form>
-                        <input type="hidden" name="taskName" value="<%= taskName %>"/>
-                        <input type="submit" name="remove" value="Remover"/>
+                        <input  type="hidden" name="taskName" value="<%= taskName %>"/>
+                        <input class="btn btn-outline-secondary" type="submit" name="remove" value="Remover"/>
                     </form>
                 </td>
             </tr>
