@@ -13,7 +13,7 @@ import java.sql.*;
  *
  * @author Rafaela
  */
-public class dbListener implements ServletContextListener {
+public class rafaela implements ServletContextListener {
     public static final String CLASS_NAME = "org.sqlite.JDBC";
     public static final String URL = "jdbc:sqlite:tasks.db";
     
@@ -27,9 +27,11 @@ public class dbListener implements ServletContextListener {
             Class.forName(CLASS_NAME);
             Connection con = getConnection();
             Statement stmt = con.createStatement();
-            stmt.execute("create table tasks("
-                    + "name varchar not null unique"
-                    + ")");
+            stmt.execute("create table if not exists tasks("
+                        + "id int not null auto_increment"
+                        + "title varchar(500)"
+                        + "user varchar(500)"
+                        + ")");
             stmt.close();
             con.close();
             
