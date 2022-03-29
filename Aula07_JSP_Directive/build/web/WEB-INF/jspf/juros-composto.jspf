@@ -1,0 +1,17 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<form>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Valor Futuro</label>
+        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="vlFuturo" >
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Taxa de juros</label>
+        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="vlJuros">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Em quantos meses</label>
+        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="vlMes" >
+    </div>
+    <button type="submit" class="btn btn-dark">Calcular</button>
+</form>
